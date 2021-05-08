@@ -1,0 +1,26 @@
+#service{
+    flex-direction: column;
+}
+#service .box{
+    height:348px;
+    margin: 10px;
+}
+
+
+#navbar{
+    flex-direction: column;
+    height: 100px;
+    padding-bottom: 5px;
+}
+
+
+#home{
+    height: 498px;
+}
+
+.h-primary{
+    padding: 12px;
+}
+.contactform form{
+    width:50%;
+}

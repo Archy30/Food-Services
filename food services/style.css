@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+
+/* navigation--------------------------------------------------------*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top:0;
+    
+}
+
+#logo{
+    margin: 1px 8px;
+    
+}
+
+#logo img{
+    margin: 5px 6px;
+    height: 56px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    text-decoration: none; /* remove underline*/
+    padding: 3px 20px;
+    border-radius: 20px;
+    display: block;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+   
+}
+
+/*---------home-------------------------*/
+#home{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 9px 67px;
+    height: 525px;
+}
+
+#home::before{
+    content: "";
+    background: url(bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 615px;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.89;
+    top:0;
+}
+.h-primary{
+    font-size:2.5rem;
+    padding: 20px;
+    text-align: center;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    
+}
+#home p{
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+    font-family:sans-serif;
+}
+
+.btn{
+    
+    margin: 18px;
+    border-radius: 10px;
+    padding:2px 10px;
+    border: 1px solid white;
+    background-color: rgba(0, 0,0, 0.7);
+    font-family:sans-serif;
+    color:white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    
+}
+
+
+/*-----------services--------------------------------------------------*/
+.sdary{
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;    
+}
+#service h2{
+    font-family: 'Dancing Script', cursive;
+    padding: 5px;
+}
+#service{
+    display: flex;
+}
+#service .box p{
+    font-family: roboto;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+#service .box{
+    border:2px solid black;
+    padding: 12px;
+    height: 424px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 18px;
+    background: #f2f2f2;
+}
+#service .box img{
+   height: 150px;
+    padding: 10px;
+}
+
+/* -------------clients------------------------------------*/
+#clients{
+    display: flex;
+    position:relative;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+}
+#clients .citem img{
+    height: 100px;    
+}
+.citem {    
+    padding: 20px;
+    text-align: center;
+    
+}
+#sponsers{
+    height: 256px;
+    
+}
+
+#sponsers::before{
+    content: "";
+    background:url(bg.jpg) no-repeat center center/cover; 
+    position: absolute;
+    height: 256px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+/*----------------contact-------------------------------------------------------------*/
+#contact{
+    position: relative;
+        
+}
+#contact::before{
+    content: "";
+    background:url(contact.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+.contactform{
+    padding-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.contactform form{
+    width:30%;
+}
+.contactform textarea{
+    width:100%
+    
+}
+.contactform input{
+    width: 100%;
+}
+
+.fm {
+    padding: 6px; 
+    font-size: 1rem;
+}
+
+
+/*-------footer----------------------------------------------------*/
+footer{
+    position: relative;
+    background-color: rgba(0, 0,0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 4px;
+    height: 30px;
+}
+footer p{
+    padding: 4px;
+}
